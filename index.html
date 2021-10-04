@@ -31,7 +31,7 @@
                 <b>Date:</b> Thursday, September 23, 2021 at <strong>5:00pm</strong><br>
                 <b>Note Taker:</b> Xiaoxiao Zou<br>
                 <b>Meeting Holder:</b> Thomas Allen Powell<br>
-                <img class="holder-picture" src="https://cse.ucsd.edu/sites/cse.ucsd.edu/files/faculty/powellF17-115x150.jpg">
+                <img class="holder-picture" src="https://cse.ucsd.edu/sites/cse.ucsd.edu/files/faculty/powellF17-115x150.jpg" alt="Thomas A. Powell's photo">
             </section>
 
             <div id="objective">
@@ -45,14 +45,14 @@
                     meeting is but the start of a career-long journey for many students.</p>    
             </div>
 
-            <span id="docu">
+            <section id="docu">
                 <h3>
                     <details>
                         <summary>Documentations</summary>
                         <a href="./meeting-ppt.pdf">Meeting Overview</a>
                     </details>
                 </h3>         
-            </span>
+            </section>
 
             <section id="dis">
                 <h2>Discussions</h2>
@@ -64,7 +64,7 @@
                 </ol>
             </section>
 
-            <span id="rec">
+            <section id="rec">
                 <h2>Recordings</h2>
                 <audio controls src="./audio.mp3">
                     Your browser does not support the <code>audio</code> element.
@@ -98,24 +98,31 @@
                   <button type="button">Submit</button>
                 </fieldset>
 
-                <label for="check-attendance">Have you attend live meeting?</label>
-                <input list="attendance" id="attend-choices" name="check-attendance" />
-                <datalist id="attendance">
-                    <option value="Yes">
-                    <option value="No">
-                </datalist>
-                <button type="button">Submit</button><br />
+                <span class="attendance">
+                    <hr>
+                    <label for="check-attendance">Have you attend live meeting?</label>
+                    <input list="attendance" id="check-attendance" name="check-attendance" />
+                    <datalist id="attendance">
+                        <option value="Yes">
+                        <option value="No">
+                    </datalist>
+                    <button type="button">Submit</button><br />
+                </span>
 
-                <label for="percentage-select">What percenatge of the recording(audio or video) do you watch?</label>
-                <select name="meeting-perc" id="percentage-select">
-                    <option value="">--Please choose an option--</option>
-                    <option value="percenatge0">0%-10%</option>
-                    <option value="percenatge25">11%-30%</option>
-                    <option value="percenatge50">31%-50%</option>
-                    <option value="percenatge75">51%-80%</option>
-                    <option value="percentage100">80%-100%</option>
-                </select><button type="button">Submit</button><br />
+                <span class="percentage">
+                    <hr>
+                    <label for="percentage-select">What percenatge of the recording(audio or video) do you watch?</label>
+                    <select name="meeting-perc" id="percentage-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="percenatge0">0%-10%</option>
+                        <option value="percenatge25">11%-30%</option>
+                        <option value="percenatge50">31%-50%</option>
+                        <option value="percenatge75">51%-80%</option>
+                        <option value="percentage100">80%-100%</option>
+                    </select><button type="button">Submit</button><br />
+                </span>
 
+                <hr>
                 <label for="comments"><i>Other Comments:</i></label><br>
                 <textarea id="comments" name="comments" rows="5" cols="33">Share your feelings after meeting...</textarea><br>
                 <button type="button">Submit</button><br />
